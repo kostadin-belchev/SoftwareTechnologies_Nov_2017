@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My demo</title>
+</head>
+<body>
+<form>
+    <div>First number:</div>
+    <div><input id="num1" /></div>
+    <div>Second number:</div>
+    <div><input id="num2" /></div>
+    <div><input type="button" value="Calculate Sum" onclick="sumNumbers()" /></div>
+    <div>Result: <span id="result" /></div>
+</form>
+
+<script>
+    function sumNumbers() {
+        let value1 = Number(document.getElementById("num1").value);
+        let value2 = Number(document.getElementById("num2").value);
+
+        let result = value1 + value2;
+
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
